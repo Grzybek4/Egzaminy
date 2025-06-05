@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawody Wędkarskie</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+    <section id="header">
+        <section id="left_header">
+            <h1>Zawody polskich wędkarzy</h1>
+        </section>
+        <section id="right_header">
+            <img src="zawody.jpg" alt="wędkowanie">
+        </section>
+    </section>
+    <section id="main">
+        <h3>Łowiska</h3>
+        <br>
+        <ul>
+            <li>Zalew Węgrowski</li>
+            <li>Zbiornik Bukówka</li>
+            <li>Jeziorko Bartbetowskie</li>
+            <li>Warta-Obrzycko</li>
+        </ul>
+        <br>
+        <h3>Dodaj zawody Wędkarskie</h3>
+        <br>
+
+        <form action="zgloszenie.php" method="post">
+            <label for="lowisko">Łowisko
+                <select name="lowisko" id="lowisko">
+                    <option value="Zalew Wegrowski">Zalew Węgrowski</option>
+                    <option value="Zbiornik Bukowka">Zbiornik Bukówka</option>
+                    <option value="Jeziorko Bartbetowskie">Jeziorko Bartbetowskie</option>
+                    <option value="Warta-Obrzycko">Warta-Obrzycko</option>
+                    <option value="Stawy Milkow">Stawy Milkow</option>
+                    <option value="Przemsza k. Okradzinowa">Przemsza k. Okradzinowa</option>
+                </select>
+            </label><br>
+            <br>
+            <label for="data">Data<input type="date" id="data" name="data"></label><br>
+            <br>
+            <label for="sedzia">Sędzia<input type="tel" id="sedzia" name="sedzia"></label><br>
+            <br>
+            <button type="reset">CZYŚĆ</button>
+            <button type="submit">DODAJ</button>
+        </form>
+        
+
+
+    </section>
+    <section id="footer">
+        <section id="left_footer">
+            <a href="kwerendy.txt" style="font-size: 200%;"><button style="background-color: white; border: 1px solid white; padding: 10px;">POBIERZ</button></a>
+        </section>
+        <section id="right_footer">
+            Stronę przygotował: RODO
+        </section>
+    </section>
+</body>
+</html>

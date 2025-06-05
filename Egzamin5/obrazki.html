@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+    <section id="main1">
+        <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="pszczola">
+        <form>
+            <input type="radio" id="blur" name="Efekty" value="Blur">
+            <label for="blur">Blur</label><br>
+            <input type="radio" id="sepia" name="Efekty" value="Sepia">
+            <label for="sepia">Sepia</label><br>
+            <input type="radio" id="negatyw" name="Efekty" value="Negatyw">
+            <label for="negatyw">Negatyw</label><br>
+            <button type="submit" onclick="zastosuj()">Zastosuj</button>
+        </form>
+    </section>  
+    <section id="main2">
+        <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="owoce"><br>
+        <button type="submit" onclick="kolorowy()">Kolorowy</button>
+        <button type="submit" onclick="czarnobialy()">Czarno-Biały</button>
+    </section>
+    <section id="main3">
+        <img src="owoce.jpg" alt="Kosz pełen owoców"><br>
+        <input type="range" min="0" max="100" value="100" id="przezroczystosc" name="przezroczystosc"><br>
+        <button type="submit" onclick="przezroczystosc()">Zastosuj</button>
+    </section>
+    <section id="main4">
+        <img src="zolw.jpg" alt="Żółw w wodzie"><br>
+        <input type="range" min="0" max="250" value="125" id="jasnosc" name="jasnosc"><br>
+        <button type="submit" onclick="jasnosc()">Zastosuj</button>
+    </section>
+    <footer>
+        <p><a href=" http://www.css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: 07292203474</p>
+    </footer>
+</body>
+<script src="skrypt.js"></script>
+</html>
