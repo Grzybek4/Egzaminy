@@ -79,7 +79,7 @@
     </main>
     <footer>
         <h3>Egzamin INF.03</h3>
-        <br>Autor: 07292203474
+        <br>Autor:
     </footer>
 </body>
 </html>
