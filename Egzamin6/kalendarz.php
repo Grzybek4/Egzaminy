@@ -43,7 +43,7 @@
     </main>
     <footer>
         <a href="sierpien.html">Terminarz na sierpień</a>
-        <p>stronę wykonał: 07292203474</p>
+        <p>stronę wykonał:</p>
     </footer>
 </body>
 </html>
