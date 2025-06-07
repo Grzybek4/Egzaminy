@@ -1,0 +1,7 @@
+1. SELECT zawodnicy.pseudonim FROM zawodnicy WHERE data_zdobycia LIKE '2020-07-%%'
+
+2. SELECT zawodnicy.pseudonim, zawodnicy.tytul FROM zawodnicy WHERE zawodnicy.klasa = '3A' AND tytul != ''
+
+3. SELECT zawodnicy.pseudonim, zawodnicy.klasa, zawodnicy.ranking FROM zawodnicy ORDER BY ranking ASC LIMIT 10
+
+4. SELECT zawodnicy.pseudonim, zawodnicy.data_zdobycia, (CURRENT_DATE - zawodnicy.data_zdobycia) AS "dni" FROM zawodnicy WHERE tytul != ''
