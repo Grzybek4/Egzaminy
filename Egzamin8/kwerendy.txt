@@ -1,0 +1,7 @@
+1. UPDATE wagi SET wagi.czas = CURRENT_TIME, wagi.dzien = CURRENT_DATE WHERE wagi.lokalizacje_id >= 2 AND wagi.lokalizacje_id <= 4;
+
+2. SELECT lokalizacje.ulica FROM lokalizacje;
+
+3. INSERT INTO wagi (lokalizacje_id, waga, rejestracja, dzien, czas) VALUES (5, FLOOR(RAND() * 10) + 1, 'DW12345', CURRENT_DATE, CURRENT_TIME)
+
+4. SELECT wagi.rejestracja, wagi.waga, wagi.dzien, wagi.czas, lokalizacje.ulica FROM wagi INNER JOIN lokalizacje ON lokalizacje.id = wagi.lokalizacje_id WHERE wagi.waga <= 5 

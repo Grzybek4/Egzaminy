@@ -1,0 +1,50 @@
+*{
+    font-family: Tahoma;
+}
+#header_lewy, #header_prawy{
+    background-color: #519657;
+    color: white;
+    text-align: center;
+    height: 150px;
+    float: left;
+}
+#header_lewy{
+    width: 70%;
+}
+#header_prawy{
+    width: 30%;
+}
+#lewy, #srodkowy, #prawy{
+    background-color: #E1E1E1;
+    height: 450px;
+    float: left;
+}
+#lewy, #prawy{
+    width: 25%;
+}
+#srodkowy{
+    width: 50%;
+    overflow: auto;
+}
+footer{
+    background-color: #80C683;
+    text-align: center;
+    clear: both;
+}
+table{
+    border: 1px solid #80C683;
+}
+img[src = "obraz2.jpg"]{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+th, td{
+    padding: 2px;
+}
+tr:hover{
+    background-color: #80C683;
+}
+#ostatni_wiersz{
+    background-color: red;
+}
