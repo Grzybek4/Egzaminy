@@ -1,0 +1,53 @@
+*{
+    font-family: Georgia;
+    text-align: center;
+    margin: 0px;
+}
+header, footer{
+    background-color: #BA6B6C;
+    color: white;
+    padding: 7px;
+    width: 100%;
+}
+header{
+    float: left;
+}
+footer{
+    clear: both;
+}
+#lewy, #prawy{
+    background-color: #EF9A9A;
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+#srodkowy{
+    background-color: mistyrose;
+    width: 60%;
+    height: 500px;
+    float: left;
+}
+main{
+    background-color: mistyrose;
+    padding: 50px;
+    float: left;
+    width: 100%;
+}
+
+li{
+    text-align: left;
+}
+h2::first-letter{
+    font-size: 170%;
+    color: maroon;
+}
+table{
+    margin: auto;
+    width: 80%;
+    border: 1px solid maroon;
+}
+img{
+    height: 120px;
+    margin: 7px;
+    box-shadow: 7px 7px 7px 0px dimgray;
+}

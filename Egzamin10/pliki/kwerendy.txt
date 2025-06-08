@@ -1,0 +1,4 @@
+1. SELECT wycieczki.miejsce, wycieczki.liczbaDni FROM wycieczki WHERE wycieczki.cena < 1000
+2. SELECT AVG(wycieczki.cena) AS sredniaCena, wycieczki.liczbaDni FROM wycieczki GROUP BY liczbaDni
+3. SELECT wycieczki.miejsce, zdjecia.nazwa FROM wycieczki INNER JOIN zdjecia ON wycieczki.id = zdjecia.Wycieczki_id WHERE wycieczki.cena > 500
+4. 

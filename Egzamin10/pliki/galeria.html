@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro turystyczne</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Zwiedzamy Polskę</h1>
+    </header>
+    <section id="lewy">
+        <button type="button" onclick="poprzedni()"><</button>
+    </section>
+    <section id="srodkowy">
+        <img src="1.jpg" alt="Aktywne zdjęcie" id="zdjecie">
+    </section>
+    <section id="prawy">
+        <button type="button" onclick="nastepny()">></button>
+    </section>
+    <section id="blok_miniatur">
+        <img src="1.jpg" alt="Gdańsk">
+        <img src="2.jpg" alt="Kraków">
+        <img src="3.jpg" alt="Niedzica">
+        <img src="4.jpg" alt="Pieniny">
+        <img src="5.jpg" alt="Szklarska Poręba">
+        <img src="6.jpg" alt="Tatry">
+        <img src="7.jpg" alt="Wrocław">
+    </section>
+    <script>
+        let miejsce = 1;
+        let sekcja = document.getElementById('srodkowy');
+        let zdjecie = document.getElementById('zdjecie');
+        function poprzedni(){
+            if(miejsce == 1){
+                miejsce = miejsce + 6;
+                sekcja.innerHTML = "<img src='" + miejsce + ".jpg' alt='Aktywne zdjęcie'>"
+            }else{
+                miejsce = miejsce - 1;
+                sekcja.innerHTML = "<img src='" + miejsce + ".jpg' alt='Aktywne zdjęcie'>"
+                console.log(zdjecie, miejsce);
+            }
+        }
+        function nastepny(){
+            if(miejsce == 7){
+                miejsce = miejsce - 6;
+                sekcja.innerHTML = "<img src='" + miejsce + ".jpg' alt='Aktywne zdjęcie'>"
+            }else{
+                miejsce = miejsce + 1;
+                sekcja.innerHTML = "<img src='" + miejsce + ".jpg' alt='Aktywne zdjęcie'>"
+                console.log(zdjecie, miejsce);
+            }
+        }
+    </script>
+    <footer>
+        Autorem galerii jest:
+        <p>Juliusz Jaszczyk</p>
+        <a href="http://pixabay.com" target="_blank">Więcej zdjęć</a>
+    </footer>
+</body>
+</html>

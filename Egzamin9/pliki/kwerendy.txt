@@ -1,0 +1,7 @@
+1. SELECT zdjecia.nazwaPliku, zdjecia.podpis FROM zdjecia ORDER BY zdjecia.podpis ASC;
+
+2. SELECT wycieczki.cel, wycieczki.dataWyjazdu FROM wycieczki WHERE wycieczki.dostepna = FALSE;
+
+3. SELECT wycieczki.cel, wycieczki.cena, zdjecia.podpis FROM wycieczki INNER JOIN zdjecia ON zdjecia.id = wycieczki.zdjecia_id;
+
+4. DROP TABLE uzytkownik
